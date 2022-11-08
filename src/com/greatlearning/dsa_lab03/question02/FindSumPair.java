@@ -1,4 +1,4 @@
-package com.greatlearning.question02;
+package com.greatlearning.dsa_lab03.question02;
 import java.util.*;
 
 class FindSumPair {
@@ -16,7 +16,8 @@ class FindSumPair {
 
 		return temp;
 	}
-
+	
+	// inserting values to nodes
 	public Node insert(Node root, int key) {
 		if (root == null)
 			return NewNode(key);
@@ -27,7 +28,7 @@ class FindSumPair {
 		return root;
 	}
 
-	//Check conditions
+	//Find pair and print
 	public boolean findpairUtil(Node root, int sum, HashSet<Integer> set) {
 		if (root == null) {
 			return false;
@@ -39,7 +40,7 @@ class FindSumPair {
 
 		// check if the sum - root.nodeData
 		if (set.contains(sum - root.nodeData)) {
-			System.out.println("Pair is " + (sum - root.nodeData) + ", " + root.nodeData);
+			System.out.printf("Sum = %d\nPair is (%d,%d)",sum,sum-root.nodeData, root.nodeData);
 			return true;
 		} else {
 			set.add(root.nodeData);

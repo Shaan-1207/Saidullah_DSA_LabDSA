@@ -1,5 +1,5 @@
-package com.greatlearning.question02;
-import com.greatlearning.question02.FindSumPair.Node;
+package com.greatlearning.dsa_lab03.question02;
+import com.greatlearning.dsa_lab03.question02.FindSumPair.Node;
 
 public class Main {
 	// Driver code
@@ -14,7 +14,7 @@ public class Main {
 		root = findSP.insert(root, 50);
 		root = findSP.insert(root, 70);
 
-		int sum = 20;
-		findSP.findPairWithGivenSum(root, sum);
+		int sum = 130;
+		findSP.findPairWithGivenSum(root,sum);	
 	}
 }

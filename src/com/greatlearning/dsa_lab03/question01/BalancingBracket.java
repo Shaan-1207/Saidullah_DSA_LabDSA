@@ -1,4 +1,4 @@
-package com.greatlearning.question01;
+package com.greatlearning.dsa_lab03.question01;
 
 import java.util.*;
 
@@ -52,15 +52,15 @@ public class BalancingBracket {
 		
 		//Take user input
 		Scanner sc = new Scanner(System.in);
-		System.out.print("Give an input of expressions: ");
+		System.out.print("Give an input: ");
 		String userInput = sc.nextLine();
 		sc.close();
 		
 		//Check user input,and print
 		if (isBalanced(userInput)) {
-			System.out.printf("Given expressions is '%s' it is balanced bracket.", userInput);
+			System.out.printf("\nGiven input is '%s' it has balanced bracket.", userInput);
 		} else
-			System.out.printf("Given expressions is '%s' it is not balanced bracket.", userInput);
+			System.out.printf("\nGiven input is '%s' it does not contains balanced bracket.", userInput);
 
 	}
 }
