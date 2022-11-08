@@ -52,15 +52,15 @@ public class BalancingBracket {
 		
 		//Take user input
 		Scanner sc = new Scanner(System.in);
-		System.out.print("Give an input: ");
+		System.out.print("Enter expression input: ");
 		String userInput = sc.nextLine();
 		sc.close();
 		
 		//Check user input,and print
 		if (isBalanced(userInput)) {
-			System.out.printf("\nGiven input is '%s' it has balanced bracket.", userInput);
+			System.out.printf("\nGiven expression string is '%s' it has balanced bracket.", userInput);
 		} else
-			System.out.printf("\nGiven input is '%s' it does not contains balanced bracket.", userInput);
+			System.out.printf("\nGiven expression string is '%s' it does not contains balanced bracket.", userInput);
 
 	}
 }
